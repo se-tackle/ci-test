@@ -10,4 +10,8 @@ class CiTestApplicationTests {
     fun contextLoads() {
     }
 
+    @Test
+    fun test() {
+        assert(true)
+    }
 }

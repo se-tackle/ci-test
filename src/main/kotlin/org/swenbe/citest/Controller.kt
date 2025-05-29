@@ -12,5 +12,8 @@ class Controller {
     fun hello(): String = "Hello World"
     
     @GetMapping("/greeting")
-    fun greeting(): String = "Hello World"
+    fun greeting(): String = "Hello World1"
+
+    @GetMapping("/greeting2")
+    fun greeting2(): String = "Hello World2"
 }
