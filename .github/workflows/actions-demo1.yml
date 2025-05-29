@@ -1,0 +1,19 @@
+name: When PR is merged to Main
+
+on:
+    pull_request:
+      types: [closed]
+      branches:
+        - main
+
+jobs:
+  run-on-merge:
+    if: github.event.pull_request.merged == true
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+
+      - name: Print
+        run: echo "PR was merged into main!"
