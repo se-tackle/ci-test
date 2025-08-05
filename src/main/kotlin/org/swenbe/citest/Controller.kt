@@ -19,4 +19,7 @@ class Controller {
 
     @GetMapping("/greeting3")
     fun greeting3(): String = "Hello World3"
+
+    @GetMapping("/greeting4")
+    fun greeting4(): String = "Hello World4"
 }
